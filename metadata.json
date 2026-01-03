@@ -1,0 +1,5 @@
+{
+  "name": "Particle Identity",
+  "description": "A high-performance immersive 3D portfolio featuring interactive particle systems and GLSL shaders.",
+  "requestFramePermissions": []
+}

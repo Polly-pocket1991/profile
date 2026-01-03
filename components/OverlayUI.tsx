@@ -164,13 +164,18 @@ const OverlayUI: React.FC = () => {
       </main>
 
       {/* --- FOOTER --- */}
+      {/* --- FOOTER --- */}
       {currentSection === 'home' && (
         <MotionFooter 
           initial={{ opacity: 0 }} 
           animate={{ opacity: 1 }}
           className="fixed bottom-0 left-0 w-full p-8 md:p-12 flex justify-between items-end pointer-events-auto text-xs md:text-sm text-gray-500 font-orbitron z-40"
         >
+          {/* 之前这里漏掉了关闭标签 </div>，并且可能缺少内容 */}
           <div className="flex flex-col gap-2">
+            <span>© 2026 IDENTITY.DEV</span>
+            <span>BUILT WITH PASSION</span>
+          </div> 
         </MotionFooter>
       )}
     </div>
